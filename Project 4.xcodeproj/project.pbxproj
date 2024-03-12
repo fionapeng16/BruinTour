@@ -11,6 +11,7 @@
 		CBADF3502B9C2C1E003EF666 /* geodb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBADF34E2B9C2C1E003EF666 /* geodb.cpp */; };
 		CBADF3532B9C2C53003EF666 /* router.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBADF3512B9C2C53003EF666 /* router.cpp */; };
 		CBADF3562B9C2C73003EF666 /* tour_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBADF3542B9C2C73003EF666 /* tour_generator.cpp */; };
+		CBADF3592B9F9C51003EF666 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBADF3582B9F9C50003EF666 /* test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		CBADF3542B9C2C73003EF666 /* tour_generator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tour_generator.cpp; sourceTree = "<group>"; };
 		CBADF3552B9C2C73003EF666 /* tour_generator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tour_generator.h; sourceTree = "<group>"; };
 		CBADF3572B9C2CA4003EF666 /* mapdata.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = mapdata.txt; sourceTree = "<group>"; };
+		CBADF3582B9F9C50003EF666 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				CBADF34B2B9C2BD3003EF666 /* geopoint.h */,
 				CBADF34C2B9C2BF1003EF666 /* stops.h */,
 				CBADF34D2B9C2C05003EF666 /* tourcmd.h */,
+				CBADF3582B9F9C50003EF666 /* test.cpp */,
 			);
 			path = "Project 4";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				CBADF3422B9C2B61003EF666 /* main.cpp in Sources */,
 				CBADF3532B9C2C53003EF666 /* router.cpp in Sources */,
 				CBADF3502B9C2C1E003EF666 /* geodb.cpp in Sources */,
+				CBADF3592B9F9C51003EF666 /* test.cpp in Sources */,
 				CBADF3562B9C2C73003EF666 /* tour_generator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

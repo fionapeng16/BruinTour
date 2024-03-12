@@ -4,9 +4,9 @@
 #include <string>
 #include <vector>
 #include "geopoint.h"
-#include "base_classes.h"
 #include "HashMap.h"
 #include "geopoint.h"
+#include "base_classes.h"
 
 class GeoDatabase: public GeoDatabaseBase
 {

@@ -7,7 +7,6 @@
 #include <vector>
 
 #include "geopoint.h"
-#include "geodb.h"
 #include "stops.h"
 #include "tourcmd.h"
 

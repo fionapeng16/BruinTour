@@ -1,8 +1,11 @@
 //
-//  test.cpp
-//  Project 4
+//struct BSTNode {
+//    int m_val;
+//    BSTNode* left;
+//    BSTNode* right;
+//    BSTNode* parent;
+//    BSTNode(int val) : m_val(val), left(nullptr), right(nullptr), parent(nullptr) {}
+//};
 //
-//  Created by Fiona Peng on 3/11/24.
-//
-
-#include <stdio.h>
+//if parent is nullptr
+//    

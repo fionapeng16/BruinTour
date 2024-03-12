@@ -1,15 +1,84 @@
 #include "geodb.h"
+#include "router.h"
+#include "TourGenerator.h"
+#include "Stops.h"
+#include <iostream>
 
+void testRouter(const GeoDatabaseBase& geo_db, const GeoPoint& source, const GeoPoint& destination) {
+    Router router(geo_db);
+    std::vector<GeoPoint> route = router.route(source, destination);
+    std::cout << "Route tested 1" << std::endl;
+
+    if (route.empty()) {
+        std::cout << "No route found from source to destination." << std::endl;
+    } else {
+        std::cout << "Route from source to destination:" << std::endl;
+        for (const auto& point : route) {
+            std::cout << point.sLatitude << ", " << point.sLongitude << std::endl;
+        }
+    }
+}
 
 int main() {
-    GeoDatabase g;
-    g.load("/Users/fionapeng/Desktop/folders/cs32/Project 4/Project 4/mapdata.txt"); // assume this works to avoid error checking
-    GeoPoint p1("34.0602175", "-118.4464952");
-    GeoPoint p2("34.0600768", "-118.4467216");
-    std::cout << g.get_street_name(p1, p2); // writes "Glenmere Way"
-    std::cout << g.get_street_name(p2, p1); // writes "Glenmere Way"
-                                                                
+    // Assuming geo_db is an instance of GeoDatabase containing loaded map data
+    GeoDatabase geo_db;
+    geo_db.load("/Users/fionapeng/Desktop/folders/cs32/Project 4/Project 4/mapdata.txt");
+
+    // Define source and destination GeoPoints
+    GeoPoint source("34.0614911", "-118.4464410");
+    GeoPoint destination("34.0626647", "-118.4472813");
+
+    // Test the router
+    testRouter(geo_db, source, destination);
+    std::cout << "Route tested" << std::endl;
+
+    GeoDatabase geo_db;
+    Router router(geo_db);
+
+    // Create a TourGenerator object
+    TourGenerator tour_generator(geo_db, router);
+
+    // Create a Stops object and load the stops from a file
+    Stops stops;
+    if (!stops.load("stops.txt")) {
+        std::cerr << "Failed to load stops file." << std::endl;
+        return 1;
+    }
+
+    // Generate the tour
+    std::vector<TourCommand> tour = tour_generator.generate_tour(stops);
+
+    // Display the tour commands
+    for (const auto& cmd : tour) {
+        switch (cmd.get_command_type()) {
+            case TourCommand::proceed:
+                std::cout << "Proceed " << cmd.get_distance() << " miles "
+                          << cmd.get_direction() << " on " << cmd.get_street() << std::endl;
+                break;
+            case TourCommand::turn:
+                std::cout << "Turn " << cmd.get_direction() << " onto " << cmd.get_street() << std::endl;
+                break;
+            case TourCommand::commentary:
+                std::cout << "Commentary: " << cmd.get_poi() << " - " << cmd.get_commentary() << std::endl;
+                break;
+            default:
+                std::cerr << "Invalid command type." << std::endl;
+                break;
+        }
+    }
+    
+    
 }
+//
+//int main() {
+//    GeoDatabase g;
+//    g.load("/Users/fionapeng/Desktop/folders/cs32/Project 4/Project 4/mapdata.txt"); // assume this works to avoid error checking
+//    GeoPoint p1("34.0602175", "-118.4464952");
+//    GeoPoint p2("34.0600768", "-118.4467216");
+//    std::cout << g.get_street_name(p1, p2); // writes "Glenmere Way"
+//    std::cout << g.get_street_name(p2, p1); // writes "Glenmere Way"
+//                                                                
+//}
 
 
 //#include "HashMap.h"
