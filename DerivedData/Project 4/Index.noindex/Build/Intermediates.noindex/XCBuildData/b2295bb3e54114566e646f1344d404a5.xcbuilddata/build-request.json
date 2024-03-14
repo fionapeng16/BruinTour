@@ -1,0 +1,59 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "a368aa110316403a80ed44296cc450e2dc4b5be2f3c7e940927169f752ab268a"
+    }
+  ],
+  "containerPath" : "/Users/fionapeng/Desktop/folders/cs32/Project 4/Project 4.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx14.2",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/fionapeng/Desktop/folders/cs32/Project 4/DerivedData/Project 4/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/fionapeng/Desktop/folders/cs32/Project 4/DerivedData/Project 4/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/fionapeng/Desktop/folders/cs32/Project 4/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/fionapeng/Desktop/folders/cs32/Project 4/DerivedData/Project 4/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/fionapeng/Desktop/folders/cs32/Project 4/DerivedData/Project 4/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/fionapeng/Desktop/folders/cs32/Project 4/DerivedData/Project 4/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/fionapeng/Desktop/folders/cs32/Project 4/DerivedData/Project 4/Build/Products",
+      "pchPath" : "/Users/fionapeng/Desktop/folders/cs32/Project 4/DerivedData/Project 4/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

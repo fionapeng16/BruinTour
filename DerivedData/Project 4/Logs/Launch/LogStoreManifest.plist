@@ -6,10 +6,10 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>73E5EE43-B255-4845-B75C-8F14A8C7C36A</key>
+		<key>7A1516F0-BA91-4D25-838C-E380CF6A71E4</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>3EEA99B0-30EB-4CF8-94CC-A6BA834B778C</string>
+			<string>54081DA8-013C-4EC4-997F-78BE8703269F</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -21,7 +21,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>3</integer>
+				<integer>5</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -30,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
 			<key>fileName</key>
-			<string>Run-Project 4-2024.03.10_18-43-33--0700.xcresult</string>
+			<string>Run-Project 4-2024.03.13_15-53-22--0700.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasConsoleLog</key>
@@ -48,7 +48,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
+				<integer>2</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Project 4 project</string>
@@ -59,13 +59,13 @@
 			<key>signature</key>
 			<string>Run Project 4</string>
 			<key>timeStartedRecording</key>
-			<real>731814213.09023297</real>
+			<real>732063202.17818999</real>
 			<key>timeStoppedRecording</key>
 			<real>0.0</real>
 			<key>title</key>
 			<string>Run Project 4</string>
 			<key>uniqueIdentifier</key>
-			<string>73E5EE43-B255-4845-B75C-8F14A8C7C36A</string>
+			<string>7A1516F0-BA91-4D25-838C-E380CF6A71E4</string>
 		</dict>
 	</dict>
 </dict>

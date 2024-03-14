@@ -26,7 +26,7 @@ private:
         //constructor
         StreetSegment(GeoPoint startPoint, GeoPoint endPoint, std::vector<std::pair<std::string, GeoPoint>> pointsOfInterest) : startPoint(startPoint), endPoint(endPoint), pointsOfInterest(pointsOfInterest) {}
     };
-    HashMap<StreetSegment> database;
+    //HashMap<StreetSegment> database;
     HashMap<GeoPoint> poiLocations; //map each point of interest name to its geopoint location
     HashMap<std::vector<GeoPoint>> connectedPointsMap; //keys are a string representation of a geopoint, and key is a vector or all the geopoints that are connected to that geopoint
     HashMap<std::string> streetNameLookup; //keys are the coordinates of two GeoPoints concatenated into a single string and value is the name of the street

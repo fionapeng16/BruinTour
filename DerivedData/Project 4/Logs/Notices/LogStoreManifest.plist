@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>068A1C05-1F0A-4223-9A7C-194CC0D2CD96</key>
+		<key>1181F508-0AFC-432D-B3C5-BFF6E0F894B5</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>068A1C05-1F0A-4223-9A7C-194CC0D2CD96.xcactivitylog</string>
+			<string>1181F508-0AFC-432D-B3C5-BFF6E0F894B5.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -34,15 +34,15 @@
 			<key>signature</key>
 			<string>eyJibHVlcHJpbnRQcm92aWRlcl9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZmlvbmFwZW5nXC9EZXNrdG9wXC9mb2xkZXJzXC9jczMyXC9Qcm9qZWN0IDRcL1Byb2plY3QgNC54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludFByb3ZpZGVyIjp7fX19</string>
 			<key>timeStartedRecording</key>
-			<real>731814213.09041703</real>
+			<real>732063202.17902303</real>
 			<key>timeStoppedRecording</key>
 			<real>63113904000</real>
 			<key>title</key>
 			<string>Build Project 4</string>
 			<key>uniqueIdentifier</key>
-			<string>068A1C05-1F0A-4223-9A7C-194CC0D2CD96</string>
+			<string>1181F508-0AFC-432D-B3C5-BFF6E0F894B5</string>
 		</dict>
-		<key>76ACE713-6727-4B4C-AA77-0F60767F05C4</key>
+		<key>FCA22C19-5E28-4644-AEC7-8CFEC9385272</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -51,7 +51,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>76ACE713-6727-4B4C-AA77-0F60767F05C4.xcactivitylog</string>
+			<string>FCA22C19-5E28-4644-AEC7-8CFEC9385272.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -70,13 +70,13 @@
 			<key>signature</key>
 			<string>eyJibHVlcHJpbnRQcm92aWRlcl9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvZmlvbmFwZW5nXC9EZXNrdG9wXC9mb2xkZXJzXC9jczMyXC9Qcm9qZWN0IDRcL1Byb2plY3QgNC54Y29kZXByb2oiLCJ0eXBlIjp7ImJsdWVwcmludFByb3ZpZGVyIjp7fX19</string>
 			<key>timeStartedRecording</key>
-			<real>731814213.09041703</real>
+			<real>732063202.17902303</real>
 			<key>timeStoppedRecording</key>
 			<real>63113904000</real>
 			<key>title</key>
 			<string>Build Project 4</string>
 			<key>uniqueIdentifier</key>
-			<string>76ACE713-6727-4B4C-AA77-0F60767F05C4</string>
+			<string>FCA22C19-5E28-4644-AEC7-8CFEC9385272</string>
 		</dict>
 	</dict>
 </dict>

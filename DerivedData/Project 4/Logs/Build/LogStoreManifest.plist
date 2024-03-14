@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>3EEA99B0-30EB-4CF8-94CC-A6BA834B778C</key>
+		<key>54081DA8-013C-4EC4-997F-78BE8703269F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>3EEA99B0-30EB-4CF8-94CC-A6BA834B778C.xcactivitylog</string>
+			<string>54081DA8-013C-4EC4-997F-78BE8703269F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -29,7 +29,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>3</integer>
+				<integer>5</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Project 4 project</string>
@@ -40,13 +40,13 @@
 			<key>signature</key>
 			<string>Build Project 4</string>
 			<key>timeStartedRecording</key>
-			<real>731814213.09041703</real>
+			<real>732063202.17902303</real>
 			<key>timeStoppedRecording</key>
-			<real>731814213.16920805</real>
+			<real>732063204.11175597</real>
 			<key>title</key>
 			<string>Build Project 4</string>
 			<key>uniqueIdentifier</key>
-			<string>3EEA99B0-30EB-4CF8-94CC-A6BA834B778C</string>
+			<string>54081DA8-013C-4EC4-997F-78BE8703269F</string>
 		</dict>
 	</dict>
 </dict>

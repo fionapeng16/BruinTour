@@ -66,7 +66,7 @@ std::vector<TourCommand> TourGenerator::generate_tour(const Stops& stops) const{
                     
                     if (angle != 0 && m_geodb.get_street_name(p1, p2) != m_geodb.get_street_name(p2, p3)){
                         TourCommand turnCmd;
-                        turnCmd.init_turn(direction, m_geodb.get_street_name(p2, p3));
+                        turnCmd.init_turn(turnDir, m_geodb.get_street_name(p2, p3));
                         instructions.push_back(turnCmd);
                     }
                 }

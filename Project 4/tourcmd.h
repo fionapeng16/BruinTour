@@ -101,4 +101,3 @@ private:
 };
 
 #endif // TOURCMD_H
-\

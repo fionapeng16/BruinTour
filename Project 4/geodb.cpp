@@ -25,11 +25,11 @@ GeoDatabase::~GeoDatabase(){
  0
  */
 bool GeoDatabase::load(const std::string& map_data_file){
-    cout << "Loading map data..." << endl;
+    //cout << "Loading map data..." << endl;
     ifstream infile(map_data_file);    // infile is a name of our choosing
     if ( ! infile )                // Did opening the file fail?
     {
-        cerr << "Error: Cannot open " << map_data_file << endl;
+        //cerr << "Error: Cannot open " << map_data_file << endl;
         return false;
     }
     
@@ -57,7 +57,7 @@ bool GeoDatabase::load(const std::string& map_data_file){
             poi_stream >> latitude >> longitude;
             pointsOfInterest.push_back({poiName, GeoPoint(latitude, longitude)});
             poiLocations.insert(poiName, GeoPoint(latitude, longitude));
-            cout << "POI name: " << poiName << ", Latitude: " << latitude << ", Longitude: " << longitude << endl;
+            //cout << "POI name: " << poiName << ", Latitude: " << latitude << ", Longitude: " << longitude << endl;
         }
         
         GeoPoint startPoint(start_lat, start_long);
@@ -68,13 +68,13 @@ bool GeoDatabase::load(const std::string& map_data_file){
         streetNameLookup[startPoint.to_string() + endPoint.to_string()] = streetName;
         streetNameLookup[endPoint.to_string() + startPoint.to_string()] = streetName;
         
-        database.insert(streetName, segment);
+        //database.insert(streetName, segment);
         
         //connect the points of interest
         if (numPOI > 0){
             GeoPoint mid = midpoint(startPoint, endPoint);
-            database.insert(streetName, StreetSegment(startPoint, mid, {}));
-            database.insert(streetName, StreetSegment(mid, endPoint, {}));
+            //database.insert(streetName, StreetSegment(startPoint, mid, {}));
+            //database.insert(streetName, StreetSegment(mid, endPoint, {}));
             connectedPointsMap[startPoint.to_string()].push_back(mid);
             connectedPointsMap[mid.to_string()].push_back(startPoint);
             connectedPointsMap[mid.to_string()].push_back(endPoint);
@@ -86,7 +86,7 @@ bool GeoDatabase::load(const std::string& map_data_file){
             streetNameLookup[endPoint.to_string() + mid.to_string()] = streetName;
             
             for (const auto& poi : pointsOfInterest) {
-                database.insert("a path", StreetSegment(poi.second, mid, {}));
+                //database.insert("a path", StreetSegment(poi.second, mid, {}));
                 connectedPointsMap[poi.second.to_string()].push_back(mid);
                 connectedPointsMap[mid.to_string()].push_back(poi.second);
                 
@@ -95,15 +95,13 @@ bool GeoDatabase::load(const std::string& map_data_file){
             }
         }
     }
-    cout << "Map data loaded successfully" << endl;
+    //cout << "Map data loaded successfully" << endl;
     return true;
 }
 
 bool GeoDatabase::get_poi_location(const std::string& poi, GeoPoint& point) const {
-    cout << "Searching for POI: " << poi << endl;
     const GeoPoint* poiPtr = poiLocations.find(poi);
     if (poiPtr == nullptr) {
-        cout << "POI not found." << endl;
         return false;
     }
     point = *poiPtr; // Dereference the pointer to assign the GeoPoint object
